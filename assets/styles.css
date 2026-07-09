@@ -29,6 +29,7 @@ nav{
 header{
     background-color: #ffffff;
     overflow: auto;
+    padding: 20px;
 }
 
 header h1{
@@ -59,8 +60,15 @@ h5{
 }
 
 a{ 
+    color: #ff0000;
     font-family: 'Droid Sans', sans-serif;
     font-size: 1.25em;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0000ff;
+    text-decoration: underline;
 }
 
 p{
@@ -76,19 +84,26 @@ main{
 .main-container{
     float: left;
     margin-left: 200px;
+    padding: 20px;
+    margin: 20px;
 }
 
 .img-container{
     float: right;
     margin-right: 200px;
+    padding: 20px;
+    margin: 20px;
 }
 
 .contact{
     float: left;
     margin-left: 200px;
+    padding: 20px;
+    margin: 20px;
 }
 
 .sitemap{
     float: right;
     margin-right: 600px;
+    padding: 20px;
 }
