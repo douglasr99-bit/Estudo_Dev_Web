@@ -17,6 +17,10 @@ header.container, main.container, footer.container{
     margin: auto;
 }
 
+.container{
+    margin-left: 200px;
+}
+
 header{
     background-color: #ffffff;
     overflow: auto;
@@ -34,4 +38,18 @@ header nav{
 
 main{
     background-color: #ffffff;
+    overflow: auto;
+}
+
+.main-container{
+    float: left;
+    margin-left: 200px;
+}
+
+.img-container{
+    float: right;
+}
+
+footer{
+    clear: both;
 }
