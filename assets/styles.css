@@ -1,0 +1,43 @@
+body {
+    background-color: lightcyan;
+    width: 800px;
+    margin: 200px auto;
+    color: #ff0000;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: darkslategray;
+    border: 2px solid lightgray;
+    padding: 10px;
+}
+
+div.contact {
+    border: 5px solid rgb(15, 128, 0);
+    text-align: center;
+    padding: 50px;
+}
+
+div.sitemap {
+    border: 5px solid rgb(13, 0, 128);
+    text-align: center;
+    padding: 30px;
+}
+
+div.sitemap-links ul {
+    border: 5px solid maroon;
+    text-align: center;
+    padding: 30px;
+    margin: 40px auto;
+}
+
+.link {
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+}
