@@ -1,6 +1,16 @@
 var main = function() {
     "use strict";
-    window.alert("Hello, world!");
+    
+    var $content = $(".contact").hide();
+    var $moreContent = $(".sitemap").hide();
+
+    $("body").append($content);
+
+    $content.slideDown(2000);
+
+    $("body").append($moreContent);
+
+    $moreContent.slideDown(2000);
 };
 
-main();
+$(document).ready(main);
