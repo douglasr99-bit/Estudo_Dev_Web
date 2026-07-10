@@ -107,3 +107,56 @@ main{
     margin-right: 600px;
     padding: 20px;
 }
+
+.contact-faq{
+    float: left;
+    margin-left: 200px;
+    margin: 50px;
+    padding: 20px;
+}
+
+.sitemap-faq{
+    float: right;
+    margin-right: 600px;
+    padding: 75px;
+}
+
+.faq-item1{
+    float: left;
+    margin-left: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.faq-item2{
+    float: left;
+    margin-left: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.faq-item3{
+    float: left;
+    margin-left: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.faq-title-header h3{
+    float: left;
+    margin-left: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.faq-container{
+    margin-left: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.faq-nav{
+    float: right;
+    margin-right: 20px;
+    padding: 20px;
+}
