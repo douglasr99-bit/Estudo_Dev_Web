@@ -176,3 +176,32 @@ main{
     margin-right: 20px;
     padding: 20px;
 }
+
+/* styles for contend page */
+
+.tab a {
+    color: #000000;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+.tab a span{
+    display: inline-block;
+    border-radius: 5px 5px 0 0;
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
+    background: #ddd;
+    padding: 5px;
+}
+
+.tab a span:hover{
+    background: #fffb00;
+}
+
+.tab a span:active{
+    background: #fffb00;
+}
+
+
