@@ -1,14 +1,9 @@
-var main = function() {
+var main = function(todoObjects) {
     "use strict"
 
-    var todos = [
-        "Finish writing book",
-        "Take Gracie to the park",
-        "Answer recruiter emails on LinkedIn",
-        "Prep for Monday's class",
-        "Make up some new ToDos",
-        "Get Groceries"
-    ]
+    var todos = todoObjects.map(function (todo) {
+        return todo.description
+    });
 
     $(".tab span").toArray().forEach(function (element) {
         $(element).on("click", function () {
@@ -35,13 +30,41 @@ var main = function() {
                 });
                 $("main .content").append($content);
             }else if ($element.parent().is(":nth-child(3)")) {
-                console.log("THIRD TAB CLICKED!");
+
+                var organizedbytag = organizedbytag(todoObjects);
+
+                organizedbytag.forEach(function (tag){
+                    var $tagname = $("<h3>").text(tag.name),
+                        $content = $("<ul>");
+
+                    tag.todos.forEach(function (description){
+                        var $li = $("<li>").text(description);
+                        $content.append($li);
+                    });
+                    $("main .content").append($tagname);
+                    $("main .content").append($content);
+                });
+            }else if ($element.parent().is(":nth-child(4)")){
+                var $input = $("<input>"),
+                    $button = $("<button>").text("+");
+
+                $button.on("click", function () {
+                    todos.push($input.val());
+                    $input.val("");
+                });
+                $content = $("<div>").append($input).append($button);
+                $("main .content").append($content)
             }
 
             return false;
     });
  });
-//  $(".tab a:first-child span").trigger("click");
+
+ $(".tab a:first-child span").trigger("click");
 }
 
-$(document).ready(main);
+$(document).ready(function (todoObjects){
+    $.getJSON("todos.json", function (){
+        main(todoObjects);
+    });
+});
